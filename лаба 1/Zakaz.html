@@ -1,0 +1,60 @@
+
+<html>
+  <fieldset>
+<head>
+  <style> h3{background:rgb(128 128 128)</style>
+    <h3>Оформить заказ</h3>    
+</head>
+<body>
+    <table>
+    <tbody>
+        <tr>
+          <td>  <label> Имя</label></td>
+          <td> <input type="text" required>
+            </td>
+        </tr>
+        <tr>
+            <td> <label>Телефон</label></td>
+            <td><br><input type="number" required>
+                </td>
+          </tr> 
+          
+          <tr>
+            <td> <label>Адрес</label></td>
+            <td> <br><textarea rows="2"cols="40"></textarea></td>
+          </tr> 
+          <tr>
+            
+            <td>  <p>Cпособ оплаты</p></td>
+            <td>
+                <p><input name="way" type="radio" checked value="nal" >Наличными</p>
+                <p><input name="way" type="radio" value="card" >Карта</p>
+                <p><input name="way" type="radio" value="beznal" >Безналичный рассчет</p>
+        </td>
+          </tr>
+       
+          <tr>
+            <td> <p>Желаемый день<br> доставки</p></td>
+            <td><select><option value="ponedelnik">Понедельник</option>
+                <option value="vtorn">Вторник</option>
+                <option value="sreda">Среда</option>
+                <option value="chetv">Четверг</option>
+                <option value="pyatn">Пятница</option>
+                <option value="subb">Суббота</option>
+                <option value="voskres">Воскресение</option>
+                </select></td>
+          </tr>
+		
+          <tr>
+            <td> <p>Дополнительно</p></td>
+            <td><br><br><p><input name="dop" type="checkbox" value="callme">Перед доставкой свяжитесь со мной </p>
+                <p><input name="dop" type="checkbox" value="sober">Курьер должен быть трезвый </p>
+                </td>		
+          </tr>
+		<tr><td><button>Отправить</button></td></tr>
+	
+      </tbody>
+    </table>
+</body>
+</fieldset>
+</html>
