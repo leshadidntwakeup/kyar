@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .nav ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            display: inline-block;
+        }
+
+        .nav > ul > li {
+            float: left;
+            width: 480px;
+            position: relative;
+        }
+
+        .nav li a {
+            background: purple;
+            border: 1px solid rgb(121, 40, 40);
+            padding: 8px;
+            text-decoration: none;
+            display: inline-block;
+            width: 90px;
+            height: 25px;
+        }
+
+        .nav li li {
+            width: auto;
+            display: inline;
+        }
+
+        @media (max-width: 560px) {
+            .nav li li {
+                display: none;
+            }
+
+            .nav ul {
+                display: block;
+            }
+
+            .nav li:hover li {
+                display: block;
+            }
+
+            .nav li li .ut1 {
+                width: 70px;
+            }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>10 laba</title>
+</head>
+<body>
+    <nav class="nav">
+        <ul>
+            <li>
+                <a>Меню</a>
+                <ul class="second">
+                    <li class="l1"><a class="ut1" href="HTMLPage2.html">Пары</a></li>
+                    <li class="l2"><a class="ut1" href="HTMLPage3.html">Шахматная</a></li>
+                    <li class="l3"> <a class="ut1" href="HTMLPage2.html">Форма</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>

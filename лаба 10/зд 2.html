@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+            ul > li > li {
+                float: left;
+                position: relative;
+            }
+
+            ul li a:link {
+                color: black;
+                display: inline-block;
+                font-size: 15px;
+                width: 90px;
+                height: 45px;
+            }
+
+        nav {
+            float: left;
+            margin: 0;
+            width: 90px;
+            height: 150px;
+            border: 1px solid black;
+        }
+
+        div {
+            text-align: center;
+            float: left;
+            margin-left: 300px;
+            width: 40%;
+            height: 50%;
+            border: 1px  black;
+        }
+
+        @media (max-width: 560px) {
+            .nav li li {
+                display: none;
+            }
+
+            .nav ul {
+                display: block;
+            }
+
+            .nav li:hover li {
+                display: block;
+            }
+
+            .nav li li .ut1 {
+                width: 70px;
+            }
+
+            div {
+                margin: 0px;
+                display: block;
+                border: none;
+                margin-right: 400px;
+            }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>3 задане</title>
+</head>
+<body>
+    <nav>
+        <ul class="nav">
+            <li>
+                <i> Меню</i>
+                <ul class="ost">
+                    <li class="spis">
+                        <a href="https://www.youtube.com/"> Youtune </a>
+                    </li>
+                    <li class="spis">
+                        <a href="https://www.kinopoisk.ru/"> Kinopoisk </a>
+                    </li>
+                    <li class="spis">
+                        <a href="https://www.youtube.com/"> z2.fm </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div>
+        <audio controls="controls" src="Мумий Тролль - Утекай.mp3" width="50px"></audio>
+        <audio controls="controls" src="KIZARU - Еще одна ночь.mp3" width="50px"></audio>
+        <video src="IMG_9699.mp4" width="300px" height="250px" controls></video>
+        <video src="IMG_9325.mp4" width="300px" height="250px" controls></video>
+    </div>
+</body>

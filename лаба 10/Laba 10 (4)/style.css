@@ -1,0 +1,53 @@
+
+.conteter {
+  display: flex;
+  align-content: center;
+  max-width: 635px;
+  margin-left: 24px;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  background-color: bisque;
+}
+
+.div1 {
+  border: 1px solid black;
+  width: 100%;
+  text-align: center;
+  height: 50px;
+  min-width:170px;
+  background-color: rebeccapurple;
+}
+
+ .div2, .div3, .div4, .div5, .div6 {
+  text-align: center;
+  min-width:100px;
+  height: 50px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  width: 18%;
+  background-color: rebeccapurple;
+  border: 1px solid black;
+}
+figure img {
+  width: 200px;
+  height: 250px;
+}
+figure {
+  display: inline-block;
+  
+}
+
+figcaption {
+ text-align: center;
+}
+@media (max-width: 480px) {
+.san img {
+    width: 100px;
+    height: 150px; }
+    figcaption{
+      color:red;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    }
+  }
+
