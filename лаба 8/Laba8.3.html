@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<style>
+    .nav ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .nav > ul > li {
+        float: left;
+        width: 180px;
+        position: relative;
+    }
+
+    .nav li a {
+        display: block;
+        background: purple;
+        border: 1px solid black;
+        padding: 8px;
+        text-decoration: none;
+    }
+
+    .nav li .second {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
+
+    .nav li:hover .second {
+        display: block;
+    }
+
+    .nav li li {
+        width: auto;
+    }
+
+    .nav1 {
+        margin-bottom: 30px;
+        list-style-type: none;
+    }
+
+        .nav1 li {
+            float: right;
+        }
+
+    ul.nav1 a {
+        text-align: center;
+        width: 160px;
+        height: 20px;
+        display: inline-block;
+        color: mediumpurple;
+        font-size: 15px;
+        font-weight: 10px;
+        padding: 5px;
+        border: 3px solid purple;
+    }
+
+    .picture {
+        background: url(facultet.png) no-repeat 0 0;
+        display: inline;
+    }
+
+        .picture:hover {
+            background: url(facultet.png) no-repeat 0 -30px;
+        }
+
+    .choro {
+        background: url(facultet.png) no-repeat 0 0;
+        display: inline;
+    }
+
+        .choro:hover {
+            background: url(facultet.png) no-repeat 0 -60px;
+        }
+
+    .plocho {
+        background: url(facultet.png) no-repeat 0 0;
+        display: inline;
+    }
+
+        .plocho:hover {
+            background: url(facultet.png) no-repeat 0 -90px;
+        }
+
+    .dobre {
+        background: url(facultet.png) no-repeat 0 0;
+        display: inline;
+    }
+
+    .ut1 {
+        background-color: palevioletred !important;
+    }
+
+</style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 4 </title>
+    
+</head>
+<body>
+    <nav class="nav">
+        <ul>
+            <li><a href="HTMLPage1.html">Меню</a>
+                <ul class="second">
+                    <li class="l1"><a class="ut1" href="HTMLPage2.html">Пары</a></li>
+                    <li class="l2"><a class="ut1" href="HTMLPage3.html">Шахматная</a></li>
+                    <li class="l3"> <a class="ut1" href="index.html" >Форма</a></li>
+                </ul>
+            </li>
+        </ul>
+        </nav>
+        <ul class="nav1">
+            <li><a class="plocho" href="#foto4">ХТиТ</a></li>
+            <li><a class="choro" href="#foto3">ПиМ</a></li>
+            <li><a class="picture" href="http://it.belstu.by/?_ga=2.92917085.1589482137.1636191513-1798039652.1626101577"> IT</a> </li>
+            <li><a class="dobre" href="#foto1">БГТУ</a></li>
+        </ul>    
+</body>
+</html>

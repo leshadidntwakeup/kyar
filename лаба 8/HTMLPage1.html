@@ -1,0 +1,373 @@
+﻿<!DOCTYPE html>
+<style>
+    .zagolovok h1 {
+        animation: 2s linear;
+        animation-name: a4;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes a4 {
+        0% {
+            opacity: 1;
+        }
+
+        20% {
+            opacity: 0.5;
+        }
+
+        40% {
+            opacity: 0.2;
+        }
+        60%{
+            opacity:0.5;
+
+        }
+        80%{
+            opacity:0.8;
+            
+        }
+        100%{
+            opacity:1;
+        }
+    }
+
+
+
+    .zadanep img {
+        border: 0;
+        margin: 20px;
+        display: block;
+        height: 100px;
+        width: 200px;
+        position: relative;
+    }
+
+    .zad1 {
+        animation-name: zd1;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    @keyframes zd1 {
+        0% {
+            left: 0px;
+        }
+
+        100% {
+            left: 200px;
+        }
+    }
+
+    .zadanep .zad2 {
+        margin-left: 300px;
+        animation-name: zd2;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    @keyframes zd2 {
+        0% {
+            top: 0px;
+        }
+
+        100% {
+            top: +200px;
+        }
+    }
+
+    .zadanep .zad3 {
+        animation-name: zd3;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    @keyframes zd3 {
+        0% {
+            top: 200px;
+            left: 200px;
+        }
+
+        100% {
+            top: 0px;
+            left: 0px;
+        }
+    }
+
+    .zadanep .zad4 {
+        animation-name: zd4;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes zd4 {
+        0% {
+            top: 0px;
+            left: 0px;
+        }
+
+        25% {
+            top: 0px;
+            left: 200px;
+        }
+
+        50% {
+            top: 200px;
+            left: 200px;
+        }
+
+        75% {
+            top: 200px;
+            left: 0px;
+        }
+
+        100% {
+            top: 0px;
+            left: 0px;
+        }
+    }
+
+
+
+
+
+    .animation {
+        width: 500px;
+        height: 500px;
+        animation-name: zakati;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        background-size: 500px 500px;
+        margin-bottom: 40px;
+    }
+
+    @keyframes zakati {
+        0% {
+            background-image: url(Эмз_Skin-Default.png);
+        }
+
+        25% {
+            background-image: url(Пайпер_Skin-Default.png);
+        }
+
+        50% {
+            background-image: url(Эдгар_Skin-Default.png);
+        }
+
+        75% {
+            background-image: url(Фрэнк_Skin-Default.png);
+        }
+
+        100% {
+            background-image: url(Shelly.png);
+        }
+    }
+ 
+      
+    
+    .p{
+        width:300px;
+        height:300px;
+        background-color:aqua;
+        transition: background-color linear 20s;
+        text-align:center;
+       
+    }
+    p:hover{
+        background-color:darkgreen;
+    }
+   
+           h1 p{
+               font-family:'Franklin Gothic Book';
+           }
+       
+    
+    .first {
+        transition: 1s;
+        
+    }
+        .first:hover {
+            transform: scale(0.5);
+           
+           
+        }
+    .second{
+        transition:1s
+    }
+        .second:hover {
+          transform:rotate(45deg);
+        }
+    .third {
+        
+        transition: 1s;
+    }
+        .third:hover {
+            transform: translate(50px);
+        }
+    .fours {
+        transition: 1s;
+    }
+
+        .fours:hover {
+            transform: skew(20deg);
+        }
+
+    .fives{
+         
+           transform:rotateX(45deg);
+           transform-origin:top center;
+        }
+    .divv{
+        perspective:800px;
+        text-align:center;
+    }
+    .sexs {
+        transform: rotateY(45deg);
+        transform-origin:left center;
+    }
+    .sevens {
+        transform: rotateX(45deg);
+        transform-origin: top center;
+    }
+    .eight {
+        transform: rotateY(45deg);
+        transform-origin: right center;
+    }
+    .nines{
+
+
+    }
+    .nav1 {
+        margin-bottom: 30px;
+        padding-left: 0;
+        margin-left: 0;
+        list-style-type: none;
+    }
+
+        .nav1 li {
+            float: left;
+        }
+
+    ul.nav1 a {
+        color: green;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 20px 40px;
+        background-color: yellow;
+        border: 1px solid ;
+    }
+    .nav {
+        float: right;
+        background-color: mediumpurple;
+        border: 3px solid beige;
+        width: 100px;
+        padding: 0;
+    }
+
+    ul.nav {
+        list-style-type: none;
+    }
+
+        ul.nav a {
+            display: block;
+            border: 3px solid beige;
+            float: left;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+    .laba1:link {
+        color: red;
+        text-decoration: none;
+    }
+
+    .laba2:visited {
+        color: #8B0000;
+    }
+
+    .laba3:hover {
+        color: green;
+    }
+
+    .laba4:active {
+        color: rgb(184,134,11);
+    }
+</style>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>лаба 7</title>
+</head>
+<body>
+    <ul class="nav1">
+        <li><a href="#foto1">Задание 1</a></li>
+        <li><a href="#foto2">Задание 2</a></li>
+        <li><a href="#foto3">Задание 3</a></li>
+        <li><a href="#foto4">Задание 4</a></li>
+        <li><a href="#foto5">Задание 5</a></li>
+    </ul>
+    <ul class="nav">
+        <li><a class="laba1" href="1.html">Лаба 1</a></li>
+        <li><a class="laba2" href="3.html">Лаба 3</a></li>
+        <li><a class="laba3" href="2.html">Лаба 4</a></li>
+        <li><a class="laba4" href=".html">block </a></li>
+    </ul>
+    <br />
+    <a class="zagolovok">
+        <h1 align="center" id="foto1">Задание 1</h1>
+    </a>
+    <div>
+        <img src="Эмз_Skin-Default.png" width="100" class="first">
+    </div>
+    <div>
+        <img src="Пайпер_Skin-Default.png" width="100" class="second">
+    </div>
+    <div><img src="Эдгар_Skin-Default.png" width="100" class="third"> </div>
+    <div><img src="Фрэнк_Skin-Default.png" width="100" class="fours"></div>
+
+    <a class="zagolovok">
+        <h1 align="center" id="foto2">Задание 2</h1>
+    </a>
+    <div class="divv">
+        <img src="93b8b85acef24f13_1200xH.jpg" width="500" class="fives">
+    </div>
+    <div class="divv">
+
+        <img src="93b8b85acef24f13_1200xH.jpg" width="500" class="sexs">
+    </div>
+    <div class="divv">
+
+        <img src="93b8b85acef24f13_1200xH.jpg" width="500" class="sevens">
+    </div>
+    <div class="divv">
+
+        <img src="93b8b85acef24f13_1200xH.jpg" width="500" class="eight">
+    </div>
+    <br /><br /><br />
+
+    <a class="zagolovok">
+        <h1 align="center" if="foto3">Задание 3</h1>
+    </a>
+    <p align="center" class="p"> бравл старс  бравл старс бравл старс бравл старс бравл старс бравл старс бравл старс бравл старс бравл старс бравл старс бравл старс бравл старс бравл старс бравл старс бравл старс бравл старс бравл старс бравл старс бравл старс  бравл старс бравл старс бравл старс бравл старс бравл старс бравл старс бравл старс бравл старс бравл старс бравл старс бравл старс бравл старс бравл старс бравл старс бравл старс бравл старс бравл старс бравл старс бравл старс бравл старс бравл старс бравл старс бравл старс бравл старс бравл старс бравл старс бравл старс бравл старс бравл старс бравл старс бравл старс бравл старс бравл старс бравл старс бравл старс бравл старс бравл старс </p>
+    <a class="zagolovok">
+
+        <h1 align="center" = id="foto4"> Задание 4 </h1>
+        <div class="animation"> </div>
+        <h1 align="center" class="zagolovok" id="foto5">Задание 5</h1>
+    </a>
+    <div class="zadanep">
+        <img src="93b8b85acef24f13_1200xH.jpg" class="zad1" />
+        <img src="93b8b85acef24f13_1200xH.jpg" class="zad2" />
+        <img src="93b8b85acef24f13_1200xH.jpg" class="zad3" />
+        <img src="93b8b85acef24f13_1200xH.jpg" class="zad4" />
+
+
+    </div>
+</body>
+</html>
