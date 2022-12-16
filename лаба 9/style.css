@@ -1,0 +1,31 @@
+
+header, footer, article, nav, aside {
+    padding: 20px;
+    background: green;
+}
+#pH {
+    grid-area: header;
+}
+#pF {
+    grid-area: footer;
+}
+#mA {
+    grid-area: article;
+}
+#mN {
+    grid-area: nav;
+}
+#sA {
+    grid-area: aside;
+}
+body{
+    display: grid;
+    grid-template-rows: 60px 1fr 60px;
+    grid-template-columns: 20% 1fr 15%;
+    grid-gap: 10px;
+    height: 100vh;
+    margin: 0;
+    grid-template-areas:"nav header header"
+                        "nav article aside"
+                        "footer footer footer" ;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<style>
+
+    .grid {
+        display: grid;
+        grid-template-columns: 40px repeat(4, 100px) 25px repeat(4, 100px) 40px;
+        grid-template-rows: 50px 50px 150px 150px;
+        row-gap: 10px;
+        column-gap: 5px;
+    }
+
+        .grid > * {
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 7px;
+            margin: 0.5px;
+        }
+
+    .zag {
+        border: 2px dashed black;
+        grid-column-start: 2;
+        grid-column-end: 11;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .che1 {
+        border: 2px dashed black;
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        margin-left: 20px;
+    }
+
+    .che2 {
+        border: 2px dashed black;
+        grid-column-start: 5;
+        grid-column-end: 8;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .che3 {
+        border: 2px dashed black;
+        grid-column-start: 8;
+        grid-column-end: 11;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        margin-right: 20px;
+    }
+
+    .zag1 {
+        border: 2px solid black;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        margin-top: 15px;
+        word-wrap: break-word;
+        letter-spacing: 1em;
+    }
+
+    .zag2 {
+        border: 2px solid black;
+        grid-column-start: 11;
+        grid-column-end: 12;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        margin-top: 15px;
+        word-wrap: break-word;
+        letter-spacing: 1em;
+    }
+
+    .cont1 {
+        border: 2px solid black;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        margin-top: 15px;
+    }
+
+    .cont2 {
+        border: 2px solid black;
+        grid-column-start: 4;
+        grid-column-end: 6;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        margin-top: 15px;
+    }
+
+    .cont3 {
+        border: 2px solid black;
+        grid-column-start: 7;
+        grid-column-end: 9;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        margin-top: 15px;
+    }
+
+    .cont4 {
+        border: 2px solid black;
+        grid-column-start: 9;
+        grid-column-end: 11;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        margin-top: 15px;
+    }
+
+    .cont5 {
+        border: 2px solid black;
+        grid-column-start: 9;
+        grid-column-end: 11;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+
+</style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>9 laba</title>
+</head>
+<body>
+    <div class="grid">
+        <div class="zag">Заголовок 1</div>
+        <div class="che1">Ячейка 2</div>
+        <div class="che2">Ячейка 3</div>
+        <div class="che3">Ячейка 4</div>
+        <div class="zag1">Заголовок</div>
+        <div class="zag2">Заголовок</div>
+        <div class="cont1"><p>Ячейка 1</p></div>
+        <div class="cont2">Ячейка 2</div>
+        <div class="cont3">Ячейка 1</div>
+        <div class="cont4">Ячейка 2</div>
+        <div class="cont5">Ячейка 3</div>
+    </div>
+</body>
+</html>
